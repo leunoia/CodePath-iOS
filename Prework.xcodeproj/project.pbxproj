@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7461BEA28B2E08F00EBBCF3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7461BE928B2E08F00EBBCF3 /* SettingsViewController.swift */; };
 		C77FD7DD28AF291500E3222E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FD7DC28AF291500E3222E /* AppDelegate.swift */; };
 		C77FD7DF28AF291500E3222E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FD7DE28AF291500E3222E /* SceneDelegate.swift */; };
 		C77FD7E128AF291500E3222E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77FD7E028AF291500E3222E /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7461BE928B2E08F00EBBCF3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C77FD7D928AF291500E3222E /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77FD7DC28AF291500E3222E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77FD7DE28AF291500E3222E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		C77FD7D028AF291500E3222E = {
 			isa = PBXGroup;
 			children = (
+				C7461BE928B2E08F00EBBCF3 /* SettingsViewController.swift */,
 				C77FD7DB28AF291500E3222E /* Prework */,
 				C77FD7F228AF291800E3222E /* PreworkTests */,
 				C77FD7FC28AF291800E3222E /* PreworkUITests */,
@@ -261,6 +264,7 @@
 				C77FD7E128AF291500E3222E /* ViewController.swift in Sources */,
 				C77FD7DD28AF291500E3222E /* AppDelegate.swift in Sources */,
 				C77FD7DF28AF291500E3222E /* SceneDelegate.swift in Sources */,
+				C7461BEA28B2E08F00EBBCF3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

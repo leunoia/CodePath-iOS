@@ -15,8 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        billAmountTextField.keyboardType = UIKeyboardType.numberPad
         // Do any additional setup after loading the view.
     }
 
@@ -29,6 +33,8 @@ class ViewController: UIViewController {
         let tipPercentages = [0.15, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        
+        
         
         // Update Tip Amount Label
         tipAmountLabel.text = String(format: "$%.2f", tip)
