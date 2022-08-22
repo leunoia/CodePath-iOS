@@ -15,12 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         billAmountTextField.keyboardType = UIKeyboardType.numberPad
+        self.title = "Tip Calculator"
+        billAmountTextField.becomeFirstResponder()
+        
+        let currencyFormatter = NumberFormatter();
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale.current
+
+        tipAmountLabel.text = currencyFormatter.string(for: 0.00)
+        totalLabel.text = currencyFormatter.string(for: 0.00)
         // Do any additional setup after loading the view.
     }
 
@@ -34,12 +42,14 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
-        
-        
+        let currencyFormatter = NumberFormatter();
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale.current
+
         // Update Tip Amount Label
-        tipAmountLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format:"$%.2f", total)
-        
+        tipAmountLabel.text = currencyFormatter.string(for: tip)
+        totalLabel.text = currencyFormatter.string(for: total)
         
     }
 }
